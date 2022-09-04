@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Star</title>
+
+
+    <!-----------------------Bootstrap CSS  l---------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!----------------------Font Awesome Link ---------------------->
+    <script src="https://kit.fontawesome.com/2728d6099b.js" crossorigin="anonymous"></script>
+
+    <!---------------------Style CSS link--------------------------->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <header>
+        <!-------------------Navbar Section Start---------------------------->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand text-primary fs-1 fw-bolder"> Daily News</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto gap-3">
+                        <a  class="nav-link active fw-bolder " aria-current="page" href="index.html">Breaking News</a>
+                        <a class="nav-link active fw-bolder me-3" href="blog.html">Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--------------------------Navbar Section End------------------------------------------->
+    </header>
+    <hr>
+    <main>
+        <!-------------------Category Section Start---------------->
+        <section>
+            <div id="categories-container">
+
+            </div>
+        </section>
+        <!-------------------Category Section Ended ----------------->
+
+        <!------------------News Count Section Start------------------>
+        <section class="my-4">
+            <div class="bg-white">
+                <h5 id="news-count" class="p-4"></h5>
+            </div>
+        </section>
+        <!--------------------News Count Section End----------------------->
+
+
+        <!----------------------view Default Section Start-------------->
+        <section class="d-flex justify-content-between my-3">
+            <div>
+                <label> Sort by:
+                    <select>
+                        <option>Default</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <button class="btn btn-primary">Todays Pick</button>
+                <button class="btn btn-light">Trending</button>
+            </div>
+        </section>
+        <!---------------------------View Default Section Ended------------------->
+
+
+        <!---------------------------Spinner Section Start---------------------------->
+        <section id="spinner" class="d-none">
+            <div style="height: 80vh;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading....</span>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------Spinner Section End--------------------------------->
+
+        <!-----------------------------News Card Section Start------------------------->
+        <section>
+            <div id="news-container">
+
+            </div>
+        </section>
+        <!--------------------------News Card Section End--------------------------------------->
+
+        <!------------------------------Modal card show display start---------------------------------->
+        <section>
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1"
+                aria-labelledby="exampleModalScrollableTitle" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div id="modal-container" class="modal-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------Modal card show display Ended---------------------------------->
+
+    </main>
+    <!------------------------------- tag Ended--------------------------------------------------->
+
+
+    <!-------------------------Test Section Ended------------------->
+    <section id="test">
+        <!-- <img  src="" alt=""> -->
+    </section>
+    <!-------------------------Test Section Ended------------------->
+    
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!------------News Js Script link added----------------->
+    <script src="news.js"></script>
+</body>
+
+</html>
